@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undangan Dinner</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #fff;
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 720px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(10px);
+      border-radius: 24px;
+      padding: 40px 32px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+      text-align: center;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.16);
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      margin: 16px auto 28px;
+      font-size: 18px;
+      line-height: 1.7;
+      max-width: 560px;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin: 28px 0;
+      text-align: left;
+    }
+
+    .detail-box {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .detail-title {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: rgba(255,255,255,0.72);
+      margin-bottom: 8px;
+    }
+
+    .detail-value {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.5;
+    }
+
+    .message {
+      margin-top: 12px;
+      font-size: 17px;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.92);
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      background: #fff;
+      color: #2c2348;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .footer {
+      margin-top: 18px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.75);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="tag">Special Dinner Invitation</div>
+    <h1>Dinner Invitation</h1>
+    <p class="subtitle">
+      Dear my love,<br /><br />
+      I would love to celebrate your special day with a lovely dinner together.<br />
+      It would mean a lot to me to spend that moment with you.
+    </p>
+
+    <div class="details">
+      <div class="detail-box">
+        <div class="detail-title">Hari & Tanggal</div>
+        <div class="detail-value">11 April 2026</div>
+      </div>
+      <div class="detail-box">
+        <div class="detail-title">Waktu</div>
+        <div class="detail-value">20.00</div>
+      </div>
+      <div class="detail-box">
+        <div class="detail-title">Lokasi</div>
+        <div class="detail-value">Osteria Gia</div>
+      </div>
+    </div>
+
+    <p class="message">
+      Looking forward to a beautiful evening with you ✨
+    </p>
+
+    <a class="button" href="#">Konfirmasi Kehadiran</a>
+    <div class="footer">Dress code: Black Grey</div>
+  </div>
+</body>
+</html>
